@@ -37,6 +37,7 @@ export default function MainPage() {
         useNativeDriver: true,
       }).start();
     });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const handlePress = () => {
@@ -77,7 +78,7 @@ export default function MainPage() {
           <View style={styles.linesContainer}>
             <View style={styles.lineWrapper}>
               <LinearGradient
-                colors={["#E8D5C4", "#C8B6A6"]}
+                colors={["#E3F2FD", "#BBDEFB"]}
                 style={[styles.line, { width: "70%" }]}
                 start={{ x: 0, y: 0 }}
                 end={{ x: 1, y: 0 }}
@@ -85,7 +86,7 @@ export default function MainPage() {
             </View>
             <View style={styles.lineWrapper}>
               <LinearGradient
-                colors={["#C8B6A6", "#A4907C"]}
+                colors={["#90CAF9", "#64B5F6"]}
                 style={[styles.line, { width: "85%" }]}
                 start={{ x: 0, y: 0 }}
                 end={{ x: 1, y: 0 }}
@@ -93,7 +94,7 @@ export default function MainPage() {
             </View>
             <View style={styles.lineWrapper}>
               <LinearGradient
-                colors={["#A4907C", "#8B7355"]}
+                colors={["#42A5F5", "#2196F3"]}
                 style={styles.line}
                 start={{ x: 0, y: 0 }}
                 end={{ x: 1, y: 0 }}
@@ -132,7 +133,7 @@ export default function MainPage() {
               ]}
             >
               <LinearGradient
-                colors={["#A4907C", "#8B7355"]}
+                colors={["#1E88E5", "#1976D2"]}
                 style={styles.button}
                 start={{ x: 0, y: 0 }}
                 end={{ x: 1, y: 0 }}
@@ -152,7 +153,7 @@ const { width } = Dimensions.get("window");
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#F8EDE3",
+    backgroundColor: "#FFFFFF",
   },
   contentContainer: {
     flex: 1,
@@ -179,7 +180,7 @@ const styles = StyleSheet.create({
     height: 35,
     borderRadius: 17.5,
     width: "100%",
-    shadowColor: "#000",
+    shadowColor: "#64B5F6",
     shadowOffset: {
       width: 0,
       height: 1,
@@ -196,17 +197,16 @@ const styles = StyleSheet.create({
   },
   brandName: {
     fontSize: 38,
-    fontFamily: "Jost_800ExtraBold",
-    color: "#8B7355",
+    fontFamily: "IBMPlexSansKR_700Bold",
+    color: "#1976D2",
     letterSpacing: 0.5,
   },
   tagline: {
     marginTop: 12,
     fontSize: 17,
-    fontFamily: "Jost_400Regular",
-    fontWeight: 500,
-    color: "#A4907C",
-    letterSpacing: 5,
+    fontFamily: "IBMPlexSansKR_300Light",
+    color: "#42A5F5",
+    letterSpacing: 3,
   },
   buttonContainer: {
     width: "80%",
@@ -225,7 +225,7 @@ const styles = StyleSheet.create({
     height: 54,
     justifyContent: "center",
     alignItems: "center",
-    shadowColor: "#000",
+    shadowColor: "#1976D2",
     shadowOffset: {
       width: 0,
       height: 1,
@@ -235,10 +235,9 @@ const styles = StyleSheet.create({
     elevation: 3,
   },
   buttonText: {
-    color: "#F8EDE3",
+    color: "#FFFFFF",
     fontSize: 18,
-    fontFamily: "Jost_700Bold",
-    letterSpacing: 3,
-    fontWeight: "bold",
+    fontFamily: "IBMPlexSansKR_600SemiBold",
+    letterSpacing: 1,
   },
 });

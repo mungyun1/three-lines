@@ -1,12 +1,13 @@
 import {
-  Jost_300Light,
-  Jost_400Regular,
-  Jost_500Medium,
-  Jost_600SemiBold,
-  Jost_700Bold,
-  Jost_800ExtraBold,
+  IBMPlexSansKR_100Thin,
+  IBMPlexSansKR_200ExtraLight,
+  IBMPlexSansKR_300Light,
+  IBMPlexSansKR_400Regular,
+  IBMPlexSansKR_500Medium,
+  IBMPlexSansKR_600SemiBold,
+  IBMPlexSansKR_700Bold,
   useFonts,
-} from "@expo-google-fonts/jost";
+} from "@expo-google-fonts/ibm-plex-sans-kr";
 import { Stack } from "expo-router";
 import * as SplashScreen from "expo-splash-screen";
 import { useCallback } from "react";
@@ -16,12 +17,13 @@ SplashScreen.preventAutoHideAsync();
 
 export default function Layout() {
   const [fontsLoaded, fontError] = useFonts({
-    Jost_300Light,
-    Jost_400Regular,
-    Jost_500Medium,
-    Jost_600SemiBold,
-    Jost_700Bold,
-    Jost_800ExtraBold,
+    IBMPlexSansKR_100Thin,
+    IBMPlexSansKR_200ExtraLight,
+    IBMPlexSansKR_300Light,
+    IBMPlexSansKR_400Regular,
+    IBMPlexSansKR_500Medium,
+    IBMPlexSansKR_600SemiBold,
+    IBMPlexSansKR_700Bold,
   });
 
   const onLayoutRootView = useCallback(async () => {

@@ -41,7 +41,7 @@ export default function MainPage() {
   }, []);
 
   const handlePress = () => {
-    router.push("/write");
+    router.push("/calendar");
   };
 
   const renderPencilIcon = () => (
@@ -138,7 +138,7 @@ export default function MainPage() {
                 start={{ x: 0, y: 0 }}
                 end={{ x: 1, y: 0 }}
               >
-                <Text style={styles.buttonText}>마음 기록하기</Text>
+                <Text style={styles.buttonText}>마음 기록하기✏️</Text>
               </LinearGradient>
             </Pressable>
           )}

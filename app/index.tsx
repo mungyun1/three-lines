@@ -168,7 +168,7 @@ const styles = StyleSheet.create({
   },
   linesContainer: {
     width: width * 0.8,
-    height: 180,
+    height: 150,
     justifyContent: "space-between",
     alignItems: "flex-end",
   },
@@ -193,7 +193,7 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     alignItems: "center",
     marginTop: 40,
-    gap: 12,
+    gap: 8,
   },
   brandName: {
     fontSize: 38,
